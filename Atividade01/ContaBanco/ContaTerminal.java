@@ -10,20 +10,20 @@ public class ContaTerminal {
         
         System.out.println("* Conta Banco *");
 
-        System.out.println("Insira o número da conta:");
+        System.out.println("\nInsira o número da conta:");
         int numero = input.nextInt();       
 
-        System.out.println("Insira o número da Agência: ");
+        System.out.println("\nInsira o número da Agência: ");
         String agencia = input.next();
 
-        System.out.println("Insira o nome do cliente:");
+        System.out.println("\nInsira o nome do cliente:");
         input.nextLine();       //leitura para limpar buffer do teclado
         String nome = input.nextLine();
 
-        System.out.println("Informe o saldo da conta: ");
+        System.out.println("\nInforme o saldo da conta: ");
         double saldo = input.nextDouble();
 
-        System.out.println("Olá " + nome + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numero + " e seu saldo de R$ " + saldo + " já está disponível para saque.");
+        System.out.println("\nOlá " + nome + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numero + " e seu saldo de R$ " + saldo + " já está disponível para saque.");
 
         input.close();
     }
